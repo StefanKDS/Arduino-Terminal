@@ -1,0 +1,62 @@
+﻿<Window x:Class="ArduinoTerminal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Arduino Terminal" MinHeight="525.756" MinWidth="535">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="icons/184577.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <GroupBox x:Name="groupBox1" Header="SD-Karte" Margin="11,0,0,5" Foreground="White" Height="177" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="497"/>
+        <ComboBox x:Name="portlist" SelectionChanged="portlist_SelectionChanged" HorizontalAlignment="Right" Margin="0,10,51,0" Width="90" Height="22" VerticalAlignment="Top"/>
+        <GroupBox x:Name="groupBox" Header="Sende Datei" HorizontalAlignment="Left" Margin="23,0,0,15" Width="474" Foreground="White" Height="49" VerticalAlignment="Bottom"/>
+        <Button x:Name="sendbtn" Content="Senden"  Click="sendbtn_Click" HorizontalAlignment="Left" Margin="399,0,0,21" Width="86" Height="25" VerticalAlignment="Bottom">
+            <Button.Background>
+                <ImageBrush ImageSource="icons\button_black.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="textBox" Margin="10,10,158,243" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" />
+        <CheckBox x:Name="scrollToEnd" Content="Autoscroll" Margin="0,0,67,242" Foreground="White" HorizontalAlignment="Right" Width="73" Height="15" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="filePath" HorizontalAlignment="Left" Margin="32,0,0,23" TextWrapping="Wrap" Width="314" Height="20" VerticalAlignment="Bottom"/>
+        <Button x:Name="filebtn" Click="filebtn_Click" Content="..." HorizontalAlignment="Left" Margin="357,0,0,21" Width="30" Height="25" VerticalAlignment="Bottom">
+            <Button.Background>
+                <ImageBrush ImageSource="icons\button_black.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="FileListbtn" Click="FileListbtn_Click" Content="SD Inhalt" HorizontalAlignment="Left" Margin="23,0,0,127" Width="86" Height="30" VerticalAlignment="Bottom">
+            <Button.Background>
+                <ImageBrush ImageSource="icons\button_black.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <GroupBox x:Name="groupBox_Copy" Header="Lösche Datei" HorizontalAlignment="Left" Margin="23,0,0,65" Width="474" Foreground="White" Height="49" VerticalAlignment="Bottom"/>
+        <Button x:Name="delbtn" Click="delbtn_Click" Content="Löschen" HorizontalAlignment="Left" Margin="399,0,0,71" Width="86" Height="25" VerticalAlignment="Bottom">
+            <Button.Background>
+                <ImageBrush ImageSource="icons\button_black.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="delFilename" HorizontalAlignment="Left" Margin="32,0,0,73" TextWrapping="Wrap" Width="314" Height="20" VerticalAlignment="Bottom"/>
+        <Button Content="Trennen" Margin="0,37,21,0" Click="Button_Click" HorizontalAlignment="Right" Width="120" Height="30" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="icons\button_black.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Clear" Margin="0,0,21,266" Click="Button_Click_1" HorizontalAlignment="Right" Width="120" Height="30" VerticalAlignment="Bottom">
+            <Button.Background>
+                <ImageBrush ImageSource="icons\button_black.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button Margin="0,11,21,0" VerticalAlignment="Top" Click="Button_Reload" HorizontalAlignment="Right" Width="22">
+            <Image Source="icons/reload.ico" Width="16" Height="16"/>
+        </Button>
+        <TextBox x:Name="editCtrl_SendString" Margin="11,0,0,205" TextWrapping="Wrap" Height="30" VerticalContentAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="242"/>
+        <Button Content="Senden" Margin="0,0,158,205" Click="Button_Click_Send_Input" HorizontalAlignment="Right" Width="120" Height="30" VerticalAlignment="Bottom">
+            <Button.Background>
+                <ImageBrush ImageSource="icons/button_black.png"/>
+            </Button.Background>
+        </Button>
+
+
+    </Grid>
+</Window>

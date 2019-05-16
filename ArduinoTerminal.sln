@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArduinoTerminal", "ArduinoTerminal\ArduinoTerminal.csproj", "{083D274B-8203-4ACB-BDB7-F3C15EA6F5F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{083D274B-8203-4ACB-BDB7-F3C15EA6F5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{083D274B-8203-4ACB-BDB7-F3C15EA6F5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{083D274B-8203-4ACB-BDB7-F3C15EA6F5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{083D274B-8203-4ACB-BDB7-F3C15EA6F5F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
