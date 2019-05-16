@@ -4,12 +4,13 @@ Arduino Terminal is a Serial Monitor with the possibility to send files to an Ar
 
 Find here the examples how to use the FilesUpload function on Arduino.
 
-#include "FileTransfer.h"
-#include <SPI.h>
+<pre><code>
+   #include "FileTransfer.h"
+   #include <SPI.h>
 
-CFileTransfer   Service;
+   CFileTransfer   Service;
 
-SD.begin(SD_CS)
+   SD.begin(SD_CS)
 
    if(Serial.available())
    {
@@ -47,11 +48,6 @@ SD.begin(SD_CS)
           SetPinMode();
        }
    }
-
-
-/*****************************************************************/
-/*   SD karte                                                    */
-/*****************************************************************/
 
 void removeFileFromSD()
 {
@@ -104,3 +100,4 @@ void printDirectory(File dir) {
         Serial.println(entry.name());
    }
 }
+</code></pre>
